@@ -1,0 +1,42 @@
+.about-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  ul, ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+  }
+  
+  ul.documents-list li, ol.rules-list li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+  }
+  
+  ul.documents-list li strong, ol.rules-list li strong {
+    font-weight: bold;
+  }
+  
+  ul.documents-list, ol.rules-list {
+    list-style-type: disc;
+  }
+
+  

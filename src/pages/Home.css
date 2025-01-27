@@ -1,0 +1,29 @@
+.home h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.home img{
+    margin-top: 25px;
+    margin-left: 29px;
+    padding : 20px;
+}
+
+.add{
+    margin-top: 80px;
+    padding-left: 500px;
+    border-radius: 10px;
+    background-color: skyblue;
+    display: flex;
+}
+@media (max-width: 768px) {
+    .catalog-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-container {
+        grid-template-columns: 1fr; /* 1 item per row on small screens */
+    }
+}

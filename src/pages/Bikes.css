@@ -1,0 +1,132 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Catalog Container */
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 bikes per row */
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    justify-items: center; /* Center items horizontally within their grid cell */
+}
+
+/* Individual Bike Card */
+.bike-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 1.5rem;
+    max-width: 300px; /* Limits the width of the card */
+    margin: auto;
+}
+
+.bike-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Bike Image Styling */
+.bike-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Text and Pricing */
+h3 {
+    font-size: 1.3rem;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.daily-rent {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    margin: 1rem 0;
+}
+
+/* Days Input Styling */
+.days-container {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.strong-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.days-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: border 0.3s ease;
+}
+
+.days-input:focus {
+    border-color:skyblue; /* Green border on focus */
+    outline: none;
+}
+
+/* Booking Button */
+.book-button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    background-color:skyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-button:hover {
+    background-color: rgb(16, 165, 224);
+    transform: translateY(-2px);
+}
+
+.book-button:active {
+    transform: translateY(2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .catalog-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-container {
+        grid-template-columns: 1fr; /* 1 item per row on small screens */
+    }
+}
