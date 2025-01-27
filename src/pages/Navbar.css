@@ -1,48 +1,90 @@
 /* Navbar container */
 nav {
-    height: 65px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: skyblue;
-    color: white;
-  }
-  
-  /* Navbar title (h1) */
-  nav h1 {
-    font-size: 25px;
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 15px;
-    margin-right: 650px;
-    color: black;
-  }
-  
-  /* Navigation links (ul) */
-  nav ul {
-    display: flex;
-    gap: 40px;
-    margin: 0;
-    padding: 10px;
-    list-style: none;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: skyblue;
+  color: white;
+  flex-wrap: wrap;
+}
+
+/* Navbar title (h1) */
+nav h1 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  padding-top: 12px;
+  margin-right: auto;
+}
+
+/* Navigation links (ul) */
+nav ul {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  font-weight: bold;
+  font-size: larger;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      align-items: center;
   }
 
+  nav h1 {
+      margin-bottom: 10px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 20px;
+  }
 
   nav ul li {
-    font-weight: bold;
-    font-size: larger;
+      font-size: medium;
   }
-  
+}
+
+@media (max-width: 480px) {
+  nav {
+      padding: 10px;
+  }
+
+  nav h1 {
+      font-size: 20px;
+      text-align: center;
+  }
+
+  nav ul {
+      gap: 10px;
+  }
+
+  nav ul li {
+      font-size: small;
+  }
+
   nav ul li a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s;
+      font-size: medium;
   }
-  
-  nav ul li a:hover {
-    color: white;
-  }
-
-
-
+}

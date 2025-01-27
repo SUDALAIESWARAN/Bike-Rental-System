@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <>
       <nav>
-        <img src={Logo} alt="logo" width={80} height={80}/>
+        <img src={Logo} alt="logo" width={85} height={85}/>
         <h1>BIKE RENTAL SYSTEM</h1>
         <ul>
           <li>
