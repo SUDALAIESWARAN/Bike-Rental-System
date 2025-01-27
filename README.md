@@ -1,4 +1,4 @@
-Bike Rental System:
+Bike Rental System Frontend Project using Reactjs
  
 The **Bike Rental System** is a user-friendly web application designed to simplify the process of renting bikes. Built using **React.js**, this frontend project focuses on delivering an intuitive and responsive user experience for both customers and administrators.  
 
