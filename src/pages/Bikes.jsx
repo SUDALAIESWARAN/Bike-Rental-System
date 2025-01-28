@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate
 import Navbar from './Navbar';
 import "./Bikes.css";
 
-const Catalog = () => {
+const Bikes = () => {
   const [days, setDays] = useState({});
   const navigate = useNavigate(); // Initialize the useNavigate hook
 
@@ -66,4 +66,4 @@ const Catalog = () => {
   );
 };
 
-export default Catalog;
+export default Bikes;
