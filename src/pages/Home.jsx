@@ -1,9 +1,9 @@
 //import React from 'react'
 import Navbar from './Navbar';
 import './Home.css'
-import Image1 from './images/tvsxl.png'
-import Image2 from './images/RE1.png'
-import Image3 from './images/Hima1.png'
+import Image1 from '/images/tvsxl.png'
+import Image2 from '/images/RE1.png'
+import Image3 from '/images/Hima1.png'
 
 function Home() {
   return (

@@ -7,17 +7,16 @@ const Bikes = () => {
   const [days, setDays] = useState({});
   const navigate = useNavigate(); // Initialize the useNavigate hook
 
-  // List of 6 bikes for rent
   const bikes = [
-    { id: 1, name: "KTM", description: "Ready to Race,emphasizing high-performance and adventure.", image: "/src/pages/images/ktm.jpg", dailyRent: 1200 },
-    { id: 2, name: "HIMALAYAN", description: "Built for all roads. Built for no roads.", image: "/src/pages/images/himalayan.webp", dailyRent: 1700 },
-    { id: 3, name: "ROYAL ENFIELD", description: "Classic craftsmanship meets timeless adventure.", image: "/src/pages/images/RE.jpg", dailyRent: 1500 },
-    { id: 4, name: "YAMAHA R15", description: "Born to Race, Built to Thrill.", image: "/src/pages/images/R15.webp", dailyRent: 1300 },
-    { id: 5, name: "YAMAHA FZ", description: "Refined power, unmatched style.", image: "/src/pages/images/FZ.jpg", dailyRent: 1000 },
-    { id: 6, name: "HONDA UNICORN", description: "Smooth, Reliable, and Timeless Performance.", image: "/src/pages/images/unicorn.jpg", dailyRent: 900 },
-    { id: 7, name: "PULSAR 150", description: "Unleash the thrill, ride the legend.", image: "/src/pages/images/Pulsar.png", dailyRent: 800 },
-    { id: 8, name: "BAJAJ PLATINA", description: "Comfort and Mileage, Redefined.", image: "/src/pages/images/platina.jpg", dailyRent: 700 },
-    { id: 9, name: "TVS XL 100", description:  "The trusted companion for every journey.", image: "/src/pages/images/tvsxl.png", dailyRent: 500 },
+    { id: 1, name: "KTM", description: "Ready to Race,emphasizing high-performance and adventure.", image: "/images/ktm.jpg", dailyRent: 1200 },
+    { id: 2, name: "HIMALAYAN", description: "Built for all roads. Built for no roads.", image: "/images/himalayan.webp", dailyRent: 1700 },
+    { id: 3, name: "ROYAL ENFIELD", description: "Classic craftsmanship meets timeless adventure.", image: "/images/RE.jpg", dailyRent: 1500 },
+    { id: 4, name: "YAMAHA R15", description: "Born to Race, Built to Thrill.", image: "/images/R15.webp", dailyRent: 1300 },
+    { id: 5, name: "YAMAHA FZ", description: "Refined power, unmatched style.", image: "/images/FZ.jpg", dailyRent: 1000 },
+    { id: 6, name: "HONDA UNICORN", description: "Smooth, Reliable, and Timeless Performance.", image: "/images/unicorn.jpg", dailyRent: 900 },
+    { id: 7, name: "PULSAR 150", description: "Unleash the thrill, ride the legend.", image: "/images/Pulsar.png", dailyRent: 800 },
+    { id: 8, name: "BAJAJ PLATINA", description: "Comfort and Mileage, Redefined.", image: "/images/platina.jpg", dailyRent: 700 },
+    { id: 9, name: "TVS XL 100", description:  "The trusted companion for every journey.", image: "/images/tvsxl.png", dailyRent: 500 },
   ];
 
   const handleBook = (bike) => {
