@@ -1,10 +1,10 @@
-import { useLocation } from "react-router-dom"; // To access the passed state
+import { useLocation } from "react-router-dom"; 
 import { useState } from "react";
-import "./Booking.css"; // Add appropriate styles
+import "./Booking.css"; 
 
 const Booking = () => {
   const location = useLocation();
-  const { bike, daysBooked, totalAmount } = location.state || {}; // Destructure the passed state
+  const { bike, daysBooked, totalAmount } = location.state || {};
   const [userDetails, setUserDetails] = useState({
     name: "",
     email: "",
@@ -21,7 +21,6 @@ const Booking = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform form validation or submission logic
     console.log("Booking Confirmed:", {
       bike,
       daysBooked,

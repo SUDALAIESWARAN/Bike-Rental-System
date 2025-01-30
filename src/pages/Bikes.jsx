@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom"; 
 import Navbar from './Navbar';
 import "./Bikes.css";
 
 const Bikes = () => {
   const [days, setDays] = useState({});
-  const navigate = useNavigate(); // Initialize the useNavigate hook
+  const navigate = useNavigate();
 
   const bikes = [
     { id: 1, name: "KTM", description: "Ready to Race,emphasizing high-performance and adventure.", image: "/images/ktm.jpg", dailyRent: 1200 },
@@ -22,8 +22,7 @@ const Bikes = () => {
   const handleBook = (bike) => {
     const daysBooked = days[bike.id] || 1;
     const totalAmount = bike.dailyRent * daysBooked;
-
-    // Navigate to the Booking page and pass the bike details and other data
+    
     navigate("/booking", {
       state: {
         bike: bike,

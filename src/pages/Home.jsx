@@ -1,4 +1,3 @@
-//import React from 'react'
 import Navbar from './Navbar';
 import './Home.css'
 import Image1 from '/images/tvsxl.png'

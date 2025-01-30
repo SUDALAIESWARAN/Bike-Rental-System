@@ -18,17 +18,11 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Basic validation
     if (formData.password !== formData.confirmPassword) {
       setErrorMessage('Passwords do not match.');
       return;
     }
-
-    // Add backend integration here
     console.log('User registered successfully:', formData);
-
-    // Clear the form
     setFormData({
       name: '',
       email: '',
