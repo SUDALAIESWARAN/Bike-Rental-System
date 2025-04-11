@@ -1,9 +1,11 @@
-import { useLocation } from "react-router-dom"; 
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "./Booking.css"; 
+import Navbar from './Navbar';
+import "./Booking.css";
 
 const Booking = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const { bike, daysBooked, totalAmount } = location.state || {};
   const [userDetails, setUserDetails] = useState({
     name: "",
@@ -21,13 +23,42 @@ const Booking = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  
+    const message = `
+    ✅ Booking Confirmed!
+  
+    🚲 Bike: ${bike.name}
+    📝 Description: ${bike.description}
+    📅 Days Booked: ${daysBooked}
+    💰 Total Amount: Rs ${totalAmount}
+
+    ✅ User Details !
+
+    👤 Name: ${userDetails.name}
+    📧 Email: ${userDetails.email}
+    📞 Phone: ${userDetails.phone}
+  
+    Thank you for choosing us!
+    `;
+  
     console.log("Booking Confirmed:", {
       bike,
       daysBooked,
       totalAmount,
       userDetails,
     });
-    alert("Booking confirmed! Thank you for choosing us.");
+  
+    alert(message);
+
+    // Optional: reset form fields
+    setUserDetails({
+      name: "",
+      email: "",
+      phone: "",
+    });
+
+    // Optional: navigate to a confirmation page or home
+    navigate("/bikes", { state: { bike, userDetails } });
   };
 
   if (!bike) {
@@ -35,6 +66,8 @@ const Booking = () => {
   }
 
   return (
+    <div>
+      <Navbar />
     <div className="booking-container">
       <h2>Booking Details</h2>
       <div className="bike-details">
@@ -88,6 +121,7 @@ const Booking = () => {
           Confirm Booking
         </button>
       </form>
+    </div>
     </div>
   );
 };

@@ -10,10 +10,16 @@ function Login() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    if (username === 'user' && password === '12345678') {
+    if (username === 'user' && password === '1234') {
       navigate('/Home');
     } else {
       setError('Invalid username or password');
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleLogin();
     }
   };
 
@@ -30,6 +36,7 @@ function Login() {
           id="username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          onKeyDown={handleKeyDown}
           placeholder="Enter your username"
         />
 
@@ -39,6 +46,7 @@ function Login() {
           id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          onKeyDown={handleKeyDown}
           placeholder="Enter your password"
         />
 
