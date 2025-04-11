@@ -11,7 +11,7 @@ This project serves as a robust foundation for a fully functional bike rental pl
 To access this project using the below username and password :
 
 Username : user.
-Password : 12345678.
+Password : 1234.
 
 Live Demo : [Click Here..](https://bike-rental-system-reactjs-yz9o.onrender.com)
 
