@@ -27,7 +27,7 @@ function Login() {
     <>
     <div className='login'></div>
     <div className="login-container">
-      <h2>Bike Rental System</h2>
+      <h2>BIKE RENTAL SYSTEM</h2>
       <center><img src={Logo} alt="logo" width={170} height={130}/></center>
       <div className="login-form">
         <label htmlFor="username">Username:</label>

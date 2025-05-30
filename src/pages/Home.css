@@ -13,14 +13,18 @@
 }
 
 .add {
-    margin-top: 80px;
+    margin-top: 20px;
     padding: 20px;
     border-radius: 10px;
-    background-color: skyblue;
+    background: linear-gradient(90deg, #00b4db, #0083b0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+.add h2{
+    color: #ffffff;
 }
 
 /* Responsive Design */

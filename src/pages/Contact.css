@@ -33,8 +33,9 @@
   }
   
   ul.contact-list li strong {
-    color: skyblue;
-  }
+    color: #0083b0; /* Matches the submit-button gradient's right side */
+}
+
   
   .contact-form {
     margin-top: 2rem;
@@ -74,7 +75,8 @@
     width: 100%;
     padding: 1rem;
     font-size: 1.1rem;
-    background-color: skyblue;
+    background: linear-gradient(90deg, #00b4db, #0083b0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     color: white;
     border: none;
     border-radius: 5px;

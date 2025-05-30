@@ -1,90 +1,76 @@
-/* Navbar container */
+/* Navbar Container */
 nav {
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: skyblue;
-  color: white;
   flex-wrap: wrap;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #00b4db, #0083b0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar title (h1) */
+/* Navbar Title */
 nav h1 {
-  font-size: 25px;
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: black;
+  font-size: 28px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: #ffffff;
   padding-top: 12px;
   margin-right: auto;
 }
 
-/* Navigation links (ul) */
+/* Navigation Links */
 nav ul {
   display: flex;
-  gap: 40px;
+  list-style: none;
+  gap: 30px;
   margin: 0;
   padding: 0;
-  list-style: none;
-  flex-wrap: wrap;
 }
 
 nav ul li {
-  font-weight: bold;
-  font-size: larger;
+  position: relative;
 }
 
 nav ul li a {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
   text-decoration: none;
-  color: black;
-  transition: color 0.3s;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   nav {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
   }
 
   nav h1 {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   nav ul {
-      flex-direction: column;
-      gap: 20px;
-  }
-
-  nav ul li {
-      font-size: medium;
-  }
-}
-
-@media (max-width: 480px) {
-  nav {
-      padding: 10px;
-  }
-
-  nav h1 {
-      font-size: 20px;
-      text-align: center;
-  }
-
-  nav ul {
-      gap: 10px;
-  }
-
-  nav ul li {
-      font-size: small;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
   }
 
   nav ul li a {
-      font-size: medium;
+    width: 100%;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 8px;
   }
 }

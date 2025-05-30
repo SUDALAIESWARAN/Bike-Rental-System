@@ -30,7 +30,7 @@ const Booking = () => {
     🚲 Bike: ${bike.name}
     📝 Description: ${bike.description}
     📅 Days Booked: ${daysBooked}
-    💰 Total Amount: Rs ${totalAmount}
+    💰 Total Amount: Rs ${totalAmount}+
 
     ✅ User Details !
 
@@ -58,7 +58,7 @@ const Booking = () => {
     });
 
     // Optional: navigate to a confirmation page or home
-    navigate("/bikes", { state: { bike, userDetails } });
+    navigate("/home", { state: { bike, userDetails } });
   };
 
   if (!bike) {
